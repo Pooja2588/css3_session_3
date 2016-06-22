@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>That's How We Solve It</title>
+
+		<link href="style.css" rel="stylesheet" />
+
+		<script type="text/javascript" >
+			function clickSignUp()
+				{
+					setTimeout(function(){ alert("You have registered!!"); }, 10000);
+					return true;
+				}
+
+		</script>
+	</head>
+	<div class="nav">
+        <ul>
+            <li><a href="#home"> <br>Home</a></li>
+            <li><a href="#news"><br>News</a></li>
+            <li><a href="#contact"><br>Contact Us</a></li>
+            <li><a href="#about"><br>About Us</a></li>
+        </ul>
+    </div>
+	
+	<body>
+		<Nav>
+			<h2>About Us</h2>
+		</Nav>
+
+		<h1>Create a New Account</h1>
+		<hr/>
+		<br/>
+		<form>
+		<div id="content" align="center" style="position:relative;">
+			<label>First Name  </label><input type="username" name="username" /><br>
+			<label>Last Name</label> <input type="surname" name="surname" /><br>
+			<label>Email </label><input type="email" name="email" placeholder="abc@xyz.com"/><br>
+			<label>Password </label> <input type="password" name="pwd" /><br/><br/>
+			<a id="submitButton" href="#" class="progress-button" data-loading="Working.." data-finished="Done!" onclick="clickSignUp()" >Sign Up</a>
+			
+		</div>
+		</form>
+
+		
+		<footer>
+            <a class="tz">You may place also place your navigation here</a>
+          
+        </footer>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="script.js"></script>
+
+	</body>
+</html>
